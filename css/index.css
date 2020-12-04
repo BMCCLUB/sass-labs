@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+
+.navbar {
+  height: 12vh;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 1fr;
+  background-color: orange;
+}
+
+.logo {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+.logo a:hover {
+  color: black;
+}
+
+.nav-items {
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  font-size: 1.75rem;
+}
+
+.nav-link {
+  justify-self: center;
+  align-self: center;
+}
+.nav-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.content {
+  background-color: #444444;
+}
+
+.banner {
+  height: 88vh;
+  background-image: url("https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-focus {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.banner-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.focus-header {
+  font-size: 3rem;
+  margin-bottom: 1.25em;
+}
+
+.focus-button {
+  padding: 0.5em;
+  margin-top: 0.75em;
+  border: 5px solid white;
+}
+.focus-button:hover {
+  border-color: orange;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  height: 90vh;
+}
+
+.content-header {
+  width: 50%;
+  margin: 0 auto 2em auto;
+  padding: 1.5em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid orange;
+}
+.content-header h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content-section {
+  text-align: center;
+  line-height: 2em;
+}
+.content-section a {
+  color: orange;
+  text-decoration: none;
+}
+.content-section a:hover {
+  color: grey;
+}
+
+.main-footer {
+  height: 10vh;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-footer p {
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=index.css.map */
