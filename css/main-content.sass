@@ -1,3 +1,6 @@
+@use './variable'
+@use './mixins'
+    
 .content
     background-color: rgb(68, 68, 68)
     
@@ -10,11 +13,9 @@
 .banner-focus
     height: 100%
     width: 100%
-    background-color: rgba(0, 0, 0, 0.5)
-    display: flex
+    background-color: variable.$button-hover-color
+    @include mixins.flex-center
     flex-direction: column
-    justify-content: center
-    align-items: center
 
 .banner-content
     height: 30%
@@ -39,7 +40,7 @@
 
     &:hover
         border-color: orange
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: variable.$button-hover-color
 
 .content
     height: 90vh
@@ -48,9 +49,7 @@
     width: 50%
     margin: 0 auto 2em auto
     padding: 1.5em 1em
-    display: flex
-    justify-content: center
-    align-items: center
+    @include mixins.flex-center
     border-bottom: 2px solid orange
 
     h1
